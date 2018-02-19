@@ -1,0 +1,17 @@
+{
+  "name": "find_perfect",
+  "version": "1.0.0",
+  "description": "Find 100% Pokemon in JSON response",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "fs": "0.0.1-security",
+    "json": "^9.0.6",
+    "json-parser": "^1.1.5"
+  }
+}
