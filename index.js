@@ -50,7 +50,7 @@ for (var i = 0; i < obj.pokemons.length; i++) {
 
 eliteList.sort(sortBy('-iv', '-level'));
 ivList.sort(sortBy('-iv', '-level'));
-levelList.sort(sortBy('-level','-iv'));
+levelList.sort(sortBy('-iv','-level'));
 
 for (var i = 0; i < eliteList.length; i++) {
 	eliteHtml = eliteHtml + '<div>' + eliteList[i].iv + '%, level ' + eliteList[i].level + ' ' + eliteList[i].name + ' at <a href="' + domain + '/#' + eliteList[i].latitude + ',' + eliteList[i].longitude + ',18z" target="_blank">' + domain + '/#' + eliteList[i].latitude + ',' + eliteList[i].longitude + ',18z</a></div>';
@@ -75,7 +75,7 @@ fs.writeFile('index.html', html, function(err) {
 	}
 });
 
-open('./index.html', 'firefox');
+open('./index.html');
 
 function getPokemonLevel(cpMultiplier) {
     if (cpMultiplier < 0.734) {
